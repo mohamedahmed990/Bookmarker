@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row g-3 mt-2 mb-5">
+            <h1 class="text-center">Bookmarker</h1>
+            <div class="col-12  alert alert-danger" id="rules">
+                <dl class="list-group-item ">
+                    <dt>
+                        Site Name or Url is not valid, Please follow the rules below :
+                    <dd class="ls"> - Site name must contain at least 3 characters</dd>
+                    <dd class="ls"> - Site URL must be a valid one</dd>
+                    </dt>
+                </dl>
+
+            </div>
+            <div class="col-12">
+                <label for="bookmarkName" class="form-label">Site Name</label>
+                <input type="text" class="form-control" id="bookmarkName" placeholder="Bookmark Name">
+            </div>
+            <div class="col-12">
+                <label for="siteURL" class="form-label">Site URL</label>
+                <input type="text" class="form-control" id="siteURL" placeholder="Website URL">
+            </div>
+
+            <div class="col-12">
+                <button onclick="addWebsite()" class="btn btn-dark rounded-pill px-3">Submit</button>
+            </div>
+            <p id="repeated" class="alert alert-success">URL already saved</p>
+
+        </div>
+        <table class="table text-white text-center h-300">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tBody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
